@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MCSDeveloper
 {
-    public class Student : IStudent
+    public class Student : EventArgs, IStudent
     {
         private List<Student> _listOfStudent;
         public int Id { get; set; }
@@ -103,5 +104,4 @@ namespace MCSDeveloper
             }
         }
     }
-
 }

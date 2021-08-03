@@ -8,6 +8,5 @@ namespace MCSDeveloper
     {
         IEnumerable<User> GetListOfUsers();
         IQueryable<User> Queries();
-        Func<IEnumerable<User>, bool> FuncQueries { get; }
     }
 }

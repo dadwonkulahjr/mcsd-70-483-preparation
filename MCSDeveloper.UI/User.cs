@@ -30,15 +30,6 @@ namespace MCSDeveloper
                 };
             }
         }
-
-        //public Func<IEnumerable<User>, bool> FuncQueries
-        //{
-        //    get
-        //    {
-        //       return FuncQueries.Invoke(Users);
-        //    }
-        //}
-
         public User(int userId, string username)
         {
             UserId = userId;
@@ -48,7 +39,6 @@ namespace MCSDeveloper
         {
             return _listOfUsers.ToList();
         }
-
         public IQueryable<User> Queries()
         {
             return _listOfUsers.AsQueryable();
